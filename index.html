@@ -1,3 +1,116 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjemmeside</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: lightgray;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="#populære-produkter">Produkter</a>
+        <a href="#populære-kategorier">Kategorier</a>
+        <a href="#kontakt-oss">Kontakt oss</a>
+    </nav>
+    <a href="index.html">
+        <img src="logo_bilde" alt="Logo">
+    </a>
+    <a href="checkout.html" style="float: right;">Checkout</a>
+</header>
+<main>
+    <section id="velkommen">
+        <h1>Velkommen til butikken</h1>
+        <p>Vi har fantastiske produkter</p>
+        <a href="#populære-produkter" style="padding: 10px 20px; background-color: black; color: white; text-decoration: none;">Shopp nå</a>
+    </section>
+    <section id="populære-produkter">
+        <h2>Mest populære produkter</h2>
+        <p>Velg ut noen av de mest populære produktene</p>
+        <div>
+            <article>
+                <img src="produkt_bilde" alt="Produkt bilde">
+                <h3>Produkt 1</h3>
+                <p>100 NOK</p>
+            </article>
+            <article>
+                <img src="produkt_bilde" alt="Produkt bilde">
+                <h3>Produkt 2</h3>
+                <p>150 NOK</p>
+            </article>
+        </div>
+    </section>
+    <section id="populære-kategorier">
+        <h2>Mest populære kategorier</h2>
+        <p>Sjekk ut våre mest populære kategorier</p>
+        <div>
+            <article>
+                <h3>Kategori 1</h3>
+            </article>
+            <article>
+                <h3>Kategori 2</h3>
+            </article>
+        </div>
+    </section>
+    <section id="tilbakemeldinger">
+        <h2>Kommentarer fra kunder</h2>
+        <article>
+            <img src="tilbakemelding_bilde" alt="Tilbakemelding">
+            <h3>Supert produkt!</h3>
+            <p>Jeg anbefaler dette produktet</p>
+        </article>
+    </section>
+</main>
+<footer>
+    <section>
+        <img src="logo_bilde" alt="Logo">
+        <p>Butikknavn</p>
+    </section>
+    <section id="kontakt-oss">
+        <h3>Kontakt oss</h3>
+        <p>Email: kontakt@hiof.no</p>
+    </section>
+    <section>
+        <h3>Lenkene</h3>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#populære-produkter">Produkter</a></li>
+            <li><a href="#populære-kategorier">Kategorier</a></li>
+            <li><a href="#kontakt-oss">Kontakt oss</a></li>
+        </ul>
+    </section>
+    <section>
+        <h3>Følg oss på sosiale medier</h3>
+        <ul>
+            <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="www.x.com" target="_blank">X / Twitter</a></li>
+        </ul>
+    </section>
+</footer>
+</body>
 </html>
