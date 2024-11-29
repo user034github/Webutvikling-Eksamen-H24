@@ -40,22 +40,26 @@
         <article>
             <img src="https://placehold.co/200x100" alt="Produkt bilde">
             <h3>Produkt 1</h3>
-            <p>250 NOK</p>
+            <p>Pris: 250 NOK</p>
+            <label for="antall-1">Antall:</label>
+            <input type="number" id="antall-1" value="1" min="1">
         </article>
         <article>
             <img src="https://placehold.co/200x100" alt="Produkt bilde">
             <h3>Produkt 2</h3>
-            <p>250 NOK</p>
+            <p>Pris: 250 NOK</p>
+            <label for="antall-2">Antall:</label>
+            <input type="number" id="antall-2" value="1" min="1">
         </article>
     </section>
     <section id="personlig-info">
         <h2>Din personlig info</h2>
         <form>
             <label for="first-name">Fornavn:</label>
-            <input type="text" id="first-name" placeholder="Fornavn">
+            <input type="text" id="first-name" placeholder="Fornavn" required pattern="[A-Za-zÆØÅæøå]+">
             <br>
             <label for="last-name">Etternavn:</label>
-            <input type="text" id="last-name" placeholder="Etternavn">
+            <input type="text" id="last-name" placeholder="Etternavn" required pattern="[A-Za-zÆØÅæøå]+">
             <br>
             <label for="phone">Telefon:</label>
             <input type="tel" id="phone" placeholder="Telefonnummer">
@@ -92,11 +96,14 @@
             <small>Kortnummeret må være 16 sifre for å være gyldig</small>
             <br>
             <label for="gyldig-dato">Utløpsdato:</label>
-            <input type="text" id="gyldig-dato" placeholder="MM/ÅÅ">
+            <input type="text" id="gyldig-dato" placeholder="MM/ÅÅ" pattern="\d{2}/\d{2}">
             <br>
             <small>Bruk formatet MM/ÅÅ</small>
             <br>
         </form>
+    </section>
+    <section id="betaling-bekreftelse">
+        <button type="submit" style="padding: 10px 25px; background-color: green; color: white; border: none">Bekreft kjøpet</button>
     </section>
 </main>
 <footer>
