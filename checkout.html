@@ -1,3 +1,84 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: lightgray;
+            padding: 1rem;
+            text-align: center;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="index.html#populære-produkter">Produkter</a>
+        <a href="index.html#populære-kategorier">Kategorier</a>
+        <a href="index.html#kontakt-oss">Kontakt oss</a>
+    </nav>
+    <a href="index.html">
+        <img src="Logo" alt="Logo">
+    </a>
+</header>
+<main>
+    <h1>Checkout</h1>
+    <section id="shopping-bag">
+        <h2>Din shopping bag</h2>
+        <article>
+            <img src="Produkt" alt="Produkt bilde">
+            <h3>Produkt 1</h3>
+            <p>250 NOK</p>
+        </article>
+        <article>
+            <img src="Produkt" alt="Produkt bilde">
+            <h3>Produkt 2</h3>
+            <p>250 NOK</p>
+        </article>
+    </section>
+    <section id="personlig-info">
+        <h2>Din personlig info</h2>
+        <form>
+            <label for="first-name">Fornavn:</label>
+            <input type="text" id="first-name" placeholder="Fornavn">
+            <br>
+            <label for="last-name">Etternavn:</label>
+            <input type="text" id="last-name" placeholder="Etternavn">
+            <br>
+        </form>
+    </section>
+    <section id="levering">
+        <h2>Levering</h2>
+        <p>Velg en leveringsmetode:</p>
+        <ul>
+            <li>Ekspress Posten</li>
+            <li>Hent fra butikken</li>
+            <li>Standard Bring</li>
+        </ul>
+    </section>
+    <section id="betaling">
+        <h2>Betaling</h2>
+        <form>
+            <label for="card-number">Kortnummer:</label>
+            <input type="text" id="card-number" placeholder="1234 1234 1234 1234">
+            <br>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>(c) 2024 Min butikk</p>
+</footer>
+</body>
 </html>
