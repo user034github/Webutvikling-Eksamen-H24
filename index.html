@@ -45,6 +45,12 @@
             padding: 0;
             justify-content: center;
         }
+        @media (max-width: 786px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -62,27 +68,30 @@
 </header>
 <main>
     <section id="velkommen">
-        <h1>Velkommen til butikken</h1>
+        <h1>Velkommen til A-butikken</h1>
         <p>Vi har fantastiske produkter</p>
         <a href="#populære-produkter" style="padding: 10px 20px; background-color: black; color: white; text-decoration: none;">Shopp nå</a>
     </section>
     <section id="populære-produkter">
         <h2>Mest populære produkter</h2>
         <p>Velg ut noen av de mest populære produktene</p>
-        <div style="display: flex; gap: 20px; flex-wrap: wrap">
+        <div class="produkt-liste" style="display: flex; gap: 20px; flex-wrap: wrap">
             <article style="flex: 1 0 25%">
-                <img src="https://placehold.co/200x100" alt="Produkt bilde 1">
+                <img src="https://placehold.co/200x100" alt="Bilde av produkt 1">
                 <h3>Produkt 1</h3>
+                <p>Beskrivelse: Donec venenatis sagittis dictum. Phasellus fermentum et justo sit amet interdum. Donec venenatis sagittis dictum. Phasellus fermentum et justo sit amet interdum.</p>
                 <p>Pris: 100 NOK</p>
             </article>
             <article style="flex: 1 0 25%">
-                <img src="https://placehold.co/200x100" alt="Produkt bilde 2">
+                <img src="https://placehold.co/200x100" alt="Bilde av produkt 2">
                 <h3>Produkt 2</h3>
+                <p>Beskrivelse: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Pris: 150 NOK</p>
             </article>
             <article style="flex: 1 0 25%">
-                <img src="https://placehold.co/200x100" alt="Produkt bilde 3">
+                <img src="https://placehold.co/200x100" alt="Bilde av produkt 3">
                 <h3>Produkt 3</h3>
+                <p>Beskrivelse: Phasellus fermentum et justo sit amet interdum. Phasellus fermentum et justo sit amet interdum.</p>
                 <p>Pris: 200 NOK</p>
             </article>
         </div>
@@ -96,18 +105,35 @@
         <h2>Mest populære kategorier</h2>
         <p>Sjekk ut våre mest populære kategorier</p>
         <article>
-            <h3>Kategori 1</h3>
+            <h3>Kategori: PC-spill</h3>
+            <p>Beskrivelse: Et bredt utvalg av de aller mest populære action-spill og gavekort for både PC, PlayStation og Xbox</p>
         </article>
         <article>
-            <h3>Kategori 2</h3>
+            <h3>Kategori: Klær</h3>
+            <p>Beskrivelse: Et bredt utvalg av sommerklær, vinterklær og sportssko</p>
         </article>
     </section>
     <section id="tilbakemeldinger">
         <h2>Kommentarer fra kunder</h2>
         <article>
-            <img src="https://placehold.co/200x100" alt="Tilbakemelding">
+            <img src="https://placehold.co/50x50" alt="Profilbildet til Fredrik"><p>&nbsp;Fredrik</p>
+            <h3>Det beste produktet i hele Norge</h3>
+            <p>Jeg har kjøpt en som julegave til hele familien, alle mine naboer, og hvis jeg hadde penger til det så hadde jeg kjøpt en til alle i lokalsamfunnet</p>
+        </article>
+        <article>
+            <img src="https://placehold.co/50x50" alt="Profilbildet til Julie"><p>&nbsp;Julie</p>
+            <h3>Kjøpte som julegave</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat mattis vestibulum.</p>
+        </article>
+        <article>
+            <img src="https://placehold.co/50x50" alt="Profilbildet til Martin"><p>&nbsp;Martin</p>
+            <h3>Hele familien elsker det</h3>
+            <p>Donec venenatis sagittis dictum. Phasellus fermentum et justo sit amet interdum.</p>
+        </article>
+        <article>
+            <img src="https://placehold.co/50x50" alt="Profilbildet til Anne Marie"><p>&nbsp;Anne Marie</p>
             <h3>Supert produkt!</h3>
-            <p>Jeg anbefaler dette produktet</p>
+            <p>Nulla commodo congue velit, vel luctus lorem facilisis ut. Nullam diam nisl, malesuada non eros eget, ultricies posuere libero.</p>
         </article>
     </section>
 </main>
@@ -118,11 +144,11 @@
 <footer>
     <section>
         <img src="https://placehold.co/100x100" alt="Logo">
-        <p>Butikknavn</p>
+        <h2>Butikk A</h2>
     </section>
     <section id="kontakt-oss">
         <h3>Kontakt oss</h3>
-        <p>Email: butikk@hiof.no</p>
+        <p>Email: a-butikken@hiof.no</p>
     </section>
     <section>
         <h3>Lenkene</h3>
@@ -136,11 +162,16 @@
     <section>
         <h3>Følg oss på sosiale medier</h3>
         <ul>
-            <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="www.facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="www.linkedin.com" target="_blank">LinkedIn</a></li>
-            <li><a href="www.x.com" target="_blank">X / Twitter</a></li>
+            <li><a href="https//:www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https//:www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https//:www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https//:www.x.com" target="_blank">X / Twitter</a></li>
         </ul>
+        <section id="tilgjengelighet">
+            <h3>Tilgjengelighetserklæring</h3>
+            <p>Nettstedet er laget for å sikre digital tilgjengelighet for alle våre brukere.</p>
+            <p>Hvis du opplever at nettstedet har mangler i dette området, vennligst kontakt oss.</p>
+        </section>
     </section>
 </footer>
 </body>
