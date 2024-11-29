@@ -19,6 +19,13 @@
             margin: 2rem 0;
             padding: 1rem;
         }
+        nav.tabs a {
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -37,10 +44,25 @@
     <nav>
         <a href="index.html">Hjemside</a> > <a href="index.html#populære-kategorier">Kategori</a> > Produkt
     </nav>
+    <nav class="tabs" style="display: flex; gap: 10px; margin-bottom: 1rem; border-bottom: 2px solid lightgray; padding-bottom: 10px">
+        <a href="#">Detaljer</a>
+        <a href="#">Anmeldelser</a>
+        <a href="#">Relaterte produkter</a>
+    </nav>
     <section id="produkt-detaljer">
         <h1>Produkt</h1>
         <img src="https://placehold.co/200x100" alt="Produkt bilde">
-        <p>250 NOK</p>
+        <p>Pris: 250 NOK</p>
+        <p>Beskrivelse: Dette er et fantastisk produkt</p>
+        <ul>
+            <li>Detalj 1</li>
+            <li>Detalj 2</li>
+            <li>Detalj 3</li>
+        </ul>
+        <div class="buttons">
+            <button style="padding: 10px 25px; margin-right: 10px; background-color: green; color: white; border: none; cursor: pointer">Kjøp nå</button>
+            <button style="padding: 10px 25px; background-color: orange; color: white; border: none; cursor: pointer">Legg i handlekurv</button>
+        </div>
     </section>
     <section id="relaterte-produkter">
         <h2>Relaterte produkter</h2>
