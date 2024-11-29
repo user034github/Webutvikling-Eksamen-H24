@@ -57,22 +57,44 @@
             <label for="last-name">Etternavn:</label>
             <input type="text" id="last-name" placeholder="Etternavn">
             <br>
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" placeholder="Telefonnummer">
+            <br>
+            <label for="address">Adresse:</label>
+            <input type="text" id="address" placeholder="Gateadresse">
+            <br>
         </form>
     </section>
     <section id="levering">
         <h2>Levering</h2>
         <p>Velg en leveringsmetode:</p>
         <ul>
-            <li>Ekspress Posten</li>
-            <li>Hent fra butikken</li>
-            <li>Standard Bring</li>
+            <li>
+                <input type="radio" id="ekspress-posten" name="levering" value="ekspress-posten" required>
+                <label for="ekspress-posten">Ekspress Posten</label>
+            </li>
+            <li>
+                <input type="radio" id="hent-fra-butikken" name="henting" value="hent-fra-butikken" required>
+                <label for="hent-fra-butikken">Hent fra butikken</label>
+            </li>
+            <li>
+                <input type="radio" id="standard-bring" name="levering" value="standard-bring" required>
+                <label for="standard-bring">Standard Bring</label>
+            </li>
         </ul>
     </section>
     <section id="betaling">
         <h2>Betaling</h2>
         <form>
             <label for="card-number">Kortnummer:</label>
-            <input type="text" id="card-number" placeholder="1234 1234 1234 1234">
+            <input type="text" id="card-number" placeholder="1234 1234 1234 1234" pattern="[0-9]{16}" maxlength="16" required>
+            <br>
+            <small>Kortnummeret må være 16 sifre for å være gyldig</small>
+            <br>
+            <label for="gyldig-dato">Utløpsdato:</label>
+            <input type="text" id="gyldig-dato" placeholder="MM/ÅÅ">
+            <br>
+            <small>Bruk formatet MM/ÅÅ</small>
             <br>
         </form>
     </section>
