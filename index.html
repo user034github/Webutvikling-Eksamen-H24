@@ -19,6 +19,7 @@
             margin: 0 10px;
             text-decoration: none;
             color: black;
+            padding: 10px;
         }
         main {
             padding: 1rem;
@@ -32,11 +33,23 @@
             padding: 1rem;
             border: 1px;
         }
+        button {
+            padding: 10px 20px;
+            background-color: lightgray;
+            border: none;
+            cursor: pointer;
+        }
+        ul {
+            display: flex;
+            gap: 35px;
+            padding: 0;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
 <header>
-    <nav>
+    <nav style="display: flex; justify-content: center; gap: 25px">
         <a href="index.html">Hjem</a>
         <a href="#populære-produkter">Produkter</a>
         <a href="#populære-kategorier">Kategorier</a>
@@ -45,7 +58,7 @@
     <a href="index.html">
         <img src="https://placehold.co/100x100" alt="Logo bilde">
     </a>
-    <a href="checkout.html" style="float: right;">Checkout</a>
+    <a href="checkout.html" style="float: right; font-size: 20px; text-decoration: none; color: black">Checkout</a>
 </header>
 <main>
     <section id="velkommen">
@@ -56,21 +69,28 @@
     <section id="populære-produkter">
         <h2>Mest populære produkter</h2>
         <p>Velg ut noen av de mest populære produktene</p>
-        <article>
-            <img src="https://placehold.co/200x100" alt="Produkt bilde 1">
-            <h3>Produkt 1</h3>
-            <p>Pris: 100 NOK</p>
-        </article>
-        <article>
-            <img src="https://placehold.co/200x100" alt="Produkt bilde 2">
-            <h3>Produkt 2</h3>
-            <p>Pris: 150 NOK</p>
-        </article>
-        <article>
-            <img src="https://placehold.co/200x100" alt="Produkt bilde 3">
-            <h3>Produkt 3</h3>
-            <p>Pris: 200 NOK</p>
-        </article>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap">
+            <article style="flex: 1 0 25%">
+                <img src="https://placehold.co/200x100" alt="Produkt bilde 1">
+                <h3>Produkt 1</h3>
+                <p>Pris: 100 NOK</p>
+            </article>
+            <article style="flex: 1 0 25%">
+                <img src="https://placehold.co/200x100" alt="Produkt bilde 2">
+                <h3>Produkt 2</h3>
+                <p>Pris: 150 NOK</p>
+            </article>
+            <article style="flex: 1 0 25%">
+                <img src="https://placehold.co/200x100" alt="Produkt bilde 3">
+                <h3>Produkt 3</h3>
+                <p>Pris: 200 NOK</p>
+            </article>
+        </div>
+        <div style="margin-top: 15px">
+            <button>Produktfilter 1</button>
+            <button>Produktfilter 2</button>
+            <button>Produktfilter 3</button>
+        </div>
     </section>
     <section id="populære-kategorier">
         <h2>Mest populære kategorier</h2>
